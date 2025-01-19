@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -298,7 +300,59 @@
  
 <!-- Penutup ajakan menggunakan aplikasi ini-->
 
+<div class="container mt-5">
+        <h1>Komentar Pengunjung</h1>
 
+        <!-- Form Tambah Komentar -->
+        <form action="/demo_day/process.php" method="POST" class="mb-4">
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Nama:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="comment" class="form-label">Komentar:</label>
+                <textarea class="form-control" id="comment" name="comment" rows="3" required></textarea>
+            </div>
+            <button type="submit" name="add_comment" class="btn btn-primary">Kirim Komentar</button>
+        </form>
+
+        <!-- Pesan -->
+        <?php if (isset($_GET['message'])): ?>
+            <div class="alert alert-success">
+                <?= htmlspecialchars($_GET['message']) ?>
+            </div>
+        <?php endif; ?>
+
+        <!-- Tabel Komentar -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Komentar</th>
+                    <th>Tanggal</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $sql = "SELECT * FROM comments ORDER BY created_at DESC";
+                $result = $conn->query($sql);
+
+                while ($row = $result->fetch_assoc()):
+                ?>
+                <tr>
+                    <td><?= htmlspecialchars($row['name']) ?></td>
+                    <td><?= htmlspecialchars($row['comment']) ?></td>
+                    <td><?= htmlspecialchars($row['created_at']) ?></td>
+                    <td>
+                        <a href="process.php?delete=<?= $row['id'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus komentar ini?')">Hapus</a>
+                    </td>
+                </tr>
+                <?php endwhile; ?>
+            </tbody>
+        </table>
+    </div>
 
   <!-- Footer -->
   <footer class="bg-dark text-white py-4">
