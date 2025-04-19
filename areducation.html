@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Education - SRE Institut Teknologi PLN</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top" data-aos="fade-down" data-aos-duration="1000">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="gambar/LOGO_SRE.png" alt="SRE Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-content">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                                <i class="fas fa-info-circle"></i>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Activity.html">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Activity</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="areducation.html">
+                                <i class="fas fa-vr-cardboard"></i>
+                                <span>AR Education</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="New.html">
+                                <i class="fas fa-newspaper"></i>
+                                <span>News & Article</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="navbar-actions">
+                        <a class="btn btn-join" href="#">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Join Us</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="ar-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="hero-title">AR Education</h1>
+                    <p class="hero-subtitle">Experience renewable energy technology through interactive Augmented
+                        Reality</p>
+                    <div class="hero-buttons">
+                        <a href="#materials" class="btn btn-primary">Explore Materials</a>
+                        <a href="#how-to-use" class="btn btn-outline">How to Use</a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="ar-preview">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80"
+                            alt="AR Preview" class="img-fluid">
+                        <div class="ar-overlay">
+                            <i class="fas fa-vr-cardboard"></i>
+                            <span>AR Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section id="materials" class="ar-materials">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">Power Plant Materials</h2>
+                <p class="section-subtitle">Select a power plant type to explore in AR</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="materials-dropdown" data-aos="fade-up">
+                        <div class="dropdown-header">
+                            <i class="fas fa-power-off"></i>
+                            <span>Select Power Plant Type</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="older/pltb.html" class="material-link">
+                                <div class="material-item" data-plant="pltb">
+                                    <div class="material-icon">
+                                        <i class="fas fa-wind"></i>
+                                    </div>
+                                    <div class="material-info">
+                                        <h3>PLTB (Wind Power Plant)</h3>
+                                        <p>Learn about wind turbine technology and energy conversion</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="older/Hydroelectric.html" class="material-link">
+                                <div class="material-item" data-plant="plta">
+                                    <div class="material-icon">
+                                        <i class="fas fa-water"></i>
+                                    </div>
+                                    <div class="material-info">
+                                        <h3>PLTA (Hydro Power Plant)</h3>
+                                        <p>Explore hydroelectric power generation systems</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="older/plts.html" class="material-link">
+                                <div class="material-item" data-plant="plts">
+                                    <div class="material-icon">
+                                        <i class="fas fa-sun"></i>
+                                    </div>
+                                    <div class="material-info">
+                                        <h3>PLTS (Solar Power Plant)</h3>
+                                        <p>Discover solar panel technology and photovoltaic systems</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="older/GeoThermal.html" class="material-link">
+                                <div class="material-item" data-plant="plth">
+                                    <div class="material-icon">
+                                        <i class="fas fa-fire"></i>
+                                    </div>
+                                    <div class="material-info">
+                                        <h3>PLTPB (Geothermal Power Plant)</h3>
+                                        <p>Understand geothermal energy extraction and conversion</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="older/Hydrogen.html" class="material-link">
+                                <div class="material-item" data-plant="pltpb">
+                                    <div class="material-icon">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <div class="material-info">
+                                        <h3>PLTH (Hydrogen Power Plant)</h3>
+                                        <p>Learn about Hydrogen production and power generation</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="older/Biomassa.html" class="material-link">
+                                <div class="material-item" data-plant="biomass">
+                                    <div class="material-icon">
+                                        <i class="fas fa-leaf"></i>
+                                    </div>
+                                    <div class="material-info">
+                                        <h3>PLT Biomassa (Biomass Power Plant)</h3>
+                                        <p>Explore biomass energy conversion processes</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section id="how-to-use" class="ar-guide">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">How to Use AR</h2>
+                <p class="section-subtitle">Follow these simple steps to experience AR education</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="guide-card">
+                        <div class="guide-number">1</div>
+                        <div class="guide-content">
+                            <h3>Select Material</h3>
+                            <p>Choose a power plant type from the dropdown menu above</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="guide-card">
+                        <div class="guide-number">2</div>
+                        <div class="guide-content">
+                            <h3>Scan QR Code</h3>
+                            <p>Use your smartphone to scan the QR code provided</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="guide-card">
+                        <div class="guide-number">3</div>
+                        <div class="guide-content">
+                            <h3>Experience AR</h3>
+                            <p>Point your camera at the marker to view the 3D model</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- ... (Keep existing footer code) ... -->
+    </footer>
+
+    <style>
+        /* AR Education Page Styles */
+        :root {
+            --primary-color: #1a5d1a;
+            --secondary-color: #2e8b57;
+            --accent-color: #90ee90;
+            --gradient-start: #1a5d1a;
+            --gradient-end: #2e8b57;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+        }
+
+        .ar-hero {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            padding: 150px 0 100px;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            background: linear-gradient(45deg, var(--white), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn-primary {
+            background: var(--white);
+            color: var(--primary-color);
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .ar-preview {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .ar-overlay {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* Materials Section */
+        .ar-materials {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .materials-dropdown {
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .dropdown-header {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .dropdown-content.active {
+            max-height: 1000px;
+        }
+
+        .material-item {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .material-item:last-child {
+            border-bottom: none;
+        }
+
+        .material-item:hover {
+            background: var(--light-bg);
+        }
+
+        .material-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(26, 93, 26, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1.5rem;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        .material-info h3 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .material-info p {
+            color: #666;
+            margin: 0;
+        }
+
+        /* Guide Section */
+        .ar-guide {
+            padding: 100px 0;
+            background: var(--light-bg);
+        }
+
+        .guide-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 2rem;
+            height: 100%;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .guide-number {
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .guide-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .guide-content p {
+            color: #666;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .material-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .material-icon {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .material-link {
+            text-decoration: none;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .material-link:hover {
+            transform: translateY(-5px);
+        }
+
+        .material-link:hover .material-item {
+            background: var(--light-bg);
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+
+        // Dropdown functionality
+        document.querySelector('.dropdown-header').addEventListener('click', function () {
+            const content = document.querySelector('.dropdown-content');
+            content.classList.toggle('active');
+        });
+
+        // Material selection
+        document.querySelectorAll('.material-item').forEach(item => {
+            item.addEventListener('click', function () {
+                const plantType = this.getAttribute('data-plant');
+                // Add your AR activation logic here
+                console.log('Selected plant type:', plantType);
+            });
+        });
+    </script>
+</body>
+
+</html>
