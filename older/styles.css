@@ -1,6 +1,15 @@
 /* General Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* Navbar Styles */
@@ -8,11 +17,15 @@ body {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem 0;
+    width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
     height: 80px;
     display: flex;
     align-items: center;
     transition: all 0.3s ease;
+    
 }
 
 .navbar.scrolled {
@@ -28,8 +41,8 @@ body {
 }
 
 .navbar-brand img {
-    height: 75px;
-    width: 250px;
+    height: auto;
+    width: 150px;
     transition: transform 0.3s ease;
     object-fit: contain;
     margin-top: -5px;
@@ -41,7 +54,10 @@ body {
 }
 
 .navbar > .container {
-    position: fixed;
+    position: absolute;
+    max-width: 100%;
+    
+    
 }
 
 .navbar-content {
@@ -163,9 +179,9 @@ body {
     bottom: 11px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 720px) {
     .navbar-collapse {
-        position: fixed;
+        position: absolute;
         top: 80px;
         left: 0;
         right: 0;
@@ -871,7 +887,7 @@ body {
 }
 
 .stat-label {
-    color: #ffffff;
+    color: #078600;
     font-size: 1.1rem;
 }
 
@@ -1477,4 +1493,30 @@ body {
 .video-intro-section {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .col-lg-4, .col-md-6, .col-sm-12 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    section {
+        overflow-x: hidden;
+        width: 100%;
+    }
 } 

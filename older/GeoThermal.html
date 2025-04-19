@@ -38,6 +38,41 @@
       height: 150px;
       object-fit: cover;
     }
+
+     /* Fix for mobile white space */
+     body {
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+            }
+
+            .row {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .col-lg-4,
+            .col-md-6,
+            .col-sm-12 {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            section {
+                overflow-x: hidden;
+                width: 100%;
+            }
+        }
   </style>
 </head>
 
