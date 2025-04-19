@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRE PLTA</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="gambar/Profile Picture_SC-50.jpg">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="Css&JS\kartu.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+
+
+  <style>
+    .hero-section {
+      background: url("hero/HPLTA.png") no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .feature-cardi img {
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* Kartu */
+    .kartu {
+      perspective: 1000px;
+      display: inline-block;
+      margin: 20px;
+    }
+
+    .kartu__inner {
+      position: relative;
+      width: 400px;
+      height: 600px;
+      transform-style: preserve-3d;
+      transition: transform 0.8s;
+    }
+
+
+    .kartu__face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .kartu__face--front {
+      background-color: #fff;
+    }
+
+    .kartu__face--back {
+      background-color: #f0f0f0;
+      transform: rotateY(180deg);
+    }
+
+
+    .kartu.flipped .kartu__inner {
+      transform: rotateY(180deg);
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top" data-aos="fade-down" data-aos-duration="1000">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="gambar/LOGO_SRE.png" alt="SRE Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-content">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Activity.html">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Activity</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../areducation.html">
+                <i class="fas fa-vr-cardboard"></i>
+                <span>AR Education</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../New.html">
+                <i class="fas fa-newspaper"></i>
+                <span>News & Article</span>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar-actions">
+            <a class="btn btn-join" href="#">
+              <i class="fas fa-user-plus"></i>
+              <span>Join Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <br /><br /><br /><br />
+  <!--Penutup Navigasi-->
+
+
+
+
+  <!-- Hero Section -->
+  <section class="hero-section" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container text-white">
+      <h1 data-aos="fade-up" data-aos-delay="200">Pembangkit Listrik Tenaga Air</h1>
+      <p data-aos="fade-up" data-aos-delay="400">Memanfaatkan energi air untuk menghasilkan listrik yang bersih dan
+        berkelanjutan.</p>
+    </div>
+  </section>
+
+  <!-- About Hydroelectric -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+          <img src="about/PLTA.png" class="img-fluid rounded" alt="Hydroelectric Power">
+        </div>
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+          <h2>Apa itu PLTA?</h2>
+          <p>Pembangkit Listrik Tenaga Air (PLTA) adalah sistem pembangkit listrik yang mengubah energi potensial air
+            menjadi energi listrik. Teknologi ini memanfaatkan aliran air dari bendungan atau sungai untuk menggerakkan
+            turbin yang terhubung dengan generator.</p>
+          <p><strong>Bagaimana Cara Kerjanya?</strong> Air yang mengalir dari ketinggian tertentu akan menggerakkan
+            turbin. Putaran turbin ini kemudian menggerakkan generator untuk menghasilkan listrik. Listrik yang
+            dihasilkan kemudian didistribusikan ke jaringan listrik.</p>
+          <p><strong>Jenis-Jenis PLTA:</strong></p>
+          <ul>
+            <li><strong>PLTA Run-of-River:</strong> Memanfaatkan aliran sungai secara langsung.</li>
+            <li><strong>PLTA Reservoir:</strong> Menggunakan bendungan untuk menyimpan air.</li>
+            <li><strong>PLTA Pumped Storage:</strong> Dapat memompa air kembali ke reservoir saat beban rendah.</li>
+          </ul>
+          <p><strong>Manfaat PLTA:</strong> Selain ramah lingkungan, PLTA juga membantu mengendalikan banjir,
+            menyediakan air irigasi, dan mendukung pembangunan berkelanjutan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">Keunggulan PLTA</h2>
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="cardi feature-cardi">
+            <img src="keunggulan/ramah_lingkungan.png" class="cardi-img-top" alt="">
+            <div class="cardi-body">
+              <h5 class="cardi-title">Ramah Lingkungan</h5>
+              <p class="cardi-text">Tidak menghasilkan emisi karbon dan polusi udara.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="cardi feature-cardi">
+            <img src="keunggulan/Efisiensi.png" class="cardi-img-top" alt="">
+            <div class="cardi-body">
+              <h5 class="cardi-title">Efisiensi Tinggi</h5>
+              <p class="cardi-text">Dapat mencapai efisiensi hingga 90% dalam konversi energi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="cardi feature-cardi">
+            <img src="keunggulan/tidak_terbatas.png" class="cardi-img-top" alt="">
+            <div class="cardi-body">
+              <h5 class="cardi-title">Sumber Energi Terbarukan</h5>
+              <p class="cardi-text">Memanfaatkan siklus air yang berkelanjutan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sejarah Energi Hydropower -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Sejarah Energi Hydropower</h2>
+      <p>
+        Hydropower telah dimanfaatkan manusia selama ribuan tahun, dimulai dari sistem irigasi 2000 tahun yang lalu
+        hingga pembangkit listrik modern. Saat ini, hydropower menjadi salah satu sumber energi terbarukan yang paling
+        penting di dunia.
+      </p>
+    </div>
+  </section>
+
+  <!-- Prinsip Kerja -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Prinsip Kerja PLTA</h2>
+      <p>
+        PLTA memanfaatkan energi potensial air di reservoir yang dialirkan melalui turbin untuk menghasilkan energi
+        kinetik. Energi ini kemudian dikonversikan menjadi energi listrik oleh generator. Proses ini efisien dan ramah
+        lingkungan, menggunakan siklus air yang berkelanjutan.
+      </p>
+    </div>
+  </section>
+
+  <!-- Jenis-Jenis Hydropower -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Jenis-Jenis Hydropower</h2>
+      <ul>
+        <li><strong>Storage/Dam System:</strong> Menggunakan bendungan untuk menyimpan air dan menghasilkan listrik
+          dengan debit terkontrol.</li>
+        <li><strong>Run-of-River:</strong> Menggunakan aliran air sungai tanpa bendungan besar, dengan dampak lingkungan
+          lebih kecil.</li>
+        <li><strong>Pumped Hydro Storage:</strong> Sistem penyimpanan energi dengan dua reservoir untuk mengatur pasokan
+          energi.</li>
+        <li><strong>Ocean Power:</strong> Termasuk wave power, tidal power, dan OTEC (Ocean Thermal Energy Conversion)
+          yang memanfaatkan perbedaan suhu air laut.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Keuntungan dan Kerugian -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Keuntungan dan Kerugian PLTA</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Keuntungan</h5>
+          <ul>
+            <li>Sumber energi yang tidak habis.</li>
+            <li>Efisiensi tinggi dan biaya rendah dalam jangka panjang.</li>
+            <li>Dapat mencegah banjir dan menyediakan irigasi.</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Kerugian</h5>
+          <ul>
+            <li>Pembangunan membutuhkan lahan luas dan biaya tinggi.</li>
+            <li>Dapat merusak ekosistem lokal.</li>
+            <li>Reservoir menghasilkan metana dan bergantung pada kondisi cuaca.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perkembangan PLTA -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Perkembangan PLTA di Dunia dan Indonesia</h2>
+      <p>
+        Di dunia, pemanfaatan hydropower meningkat hingga 21 GW pada tahun 2020, dengan China sebagai kontributor utama.
+        Di Indonesia, PLTA Cirata dan PLTA Kayan merupakan proyek besar yang tengah dikembangkan untuk meningkatkan
+        kapasitas energi terbarukan.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Statistics -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">Statistik PLTA Global</h2>
+      <div class="row text-center">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <h3>1.3 TW</h3>
+          <p>Kapasitas terpasang global</p>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+          <h3>16%</h3>
+          <p>Dari total produksi listrik dunia</p>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+          <h3>150+</h3>
+          <p>Negara menggunakan teknologi ini</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br><br><br>
+
+  <!-- AR -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Coba fitur AR seru kami! </h2>
+      <p>Siap untuk petualangan energi yang seru? Fitur AR kami mengajakmu untuk menjelajahi berbagai sumber energi
+        terbarukan, dari angin, matahari, hingga panas bumi. Bangun pembangkit listrik virtualmu sendiri, hadapi
+        tantangan iklim, dan lihat bagaimana keputusanmu memengaruhi produksi energi. Rasakan sensasi menjadi seorang
+        engineer energi masa depan!</p>
+    </div>
+  </section>
+
+  <!-- AR Instructions -->
+  <div class="container" data-aos="fade-up">
+    <h1>Bagaimana cara memakai fitur AR kami?</h1> <br>
+    <p data-aos="fade-up" data-aos-delay="200">1. KLik Kartu dibawah ini</p> <br>
+    <p data-aos="fade-up" data-aos-delay="300">2. scan QR dibelakang kartu tersebut</p><br>
+    <p data-aos="fade-up" data-aos-delay="400">3. klik kartu tersebut untuk balik ke arah kedepan untuk dijadikan
+      sebagai Objek tracker</p><br>
+    <p data-aos="fade-up" data-aos-delay="500">4. arahkan kamera anda ke kartu tersebut</p><br>
+    <p data-aos="fade-up" data-aos-delay="600">5. Selamat, anda baru saja memunculkan AR pertama anda</p><br>
+  </div>
+
+  <div class="wrapper">
+    <div class="kartu">
+      <div class="kartu__inner">
+        <div class="kartu__face kartu__face--front">
+          <img src="tracker/PLTA.png" alt="Front" style="width: 100%; height: 100%;" />
+        </div>
+        <div class="kartu__face kartu__face--back">
+          <img src="QR/PLTA.png" alt="Back" style="width: 100%; height: 100%;" />
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+    <div class="kartu">
+      <div class="kartu__inner">
+        <div class="kartu__face kartu__face--front">
+          <img src="tracker/Hydroelectric.png" alt="Front" style="width: 100%; height: 100%;" />
+        </div>
+        <div class="kartu__face kartu__face--back">
+          <img src="QR/Hydroelectric.png" alt="Back" style="width: 100%; height: 100%;" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+
+    const cards = document.querySelectorAll('.kartu');
+
+
+    cards.forEach((card) => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('flipped');
+      });
+    });
+
+
+
+  </script>
+  <br><br><br><br>
+
+
+
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up">
+            <div class="footer-info">
+              <img src="gambar/LOGO_SRE.png" alt="SRE Logo" class="footer-logo">
+              <p class="mt-3">Society of Renewable Energy ITPLN is dedicated to advancing sustainable
+                energy solutions through education, innovation, and community engagement.</p>
+              <div class="social-links">
+                <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="100"><i
+                    class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/sre.itpln/" class="social-link" data-aos="fade-up"
+                  data-aos-delay="200"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="300"><i
+                    class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="400"><i
+                    class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#activities">Activities</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="footer-title">Resources</h4>
+            <ul class="footer-links">
+              <li><a href="#">Research Papers</a></li>
+              <li><a href="#">Project Gallery</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="footer-title">Contact Info</h4>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Institut Teknologi PLN<br>Jakarta, Indonesia</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>sre.itpln@gmail.com</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>+62 XXX-XXX-XXX</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6" data-aos="fade-up">
+            <p class="copyright">© 2025 Society of Renewable Energy ITPLN. All rights reserved.</p>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="license-info">
+              <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA
+                  4.0</a></p>
+              <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg"
+                alt="CC BY-NC-SA 4.0" class="cc-license">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+  </script>
+
+
+</body>
+
+</html>

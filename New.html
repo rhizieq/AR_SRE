@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Articles - SRE Institut Teknologi PLN</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" data-aos="fade-down" data-aos-duration="1000">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="gambar/LOGO_SRE.png" alt="SRE Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-content">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                                <i class="fas fa-info-circle"></i>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Activity.html">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Activity</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="areducation.html">
+                                <i class="fas fa-vr-cardboard"></i>
+                                <span>AR Education</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="New.html">
+                                <i class="fas fa-newspaper"></i>
+                                <span>News & Article</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="navbar-actions">
+                        <a class="btn btn-join" href="#">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Join Us</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="news-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="hero-title">News & Articles</h1>
+                    <p class="hero-subtitle">Stay updated with the latest developments in renewable energy and our
+                        organization's activities</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1200&q=80"
+                            alt="News Hero" class="img-fluid">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="featured-articles">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Featured</span>
+                <h2>Latest Updates</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="featured-card">
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1200&q=80"
+                                alt="Featured Article">
+                            <div class="article-category">Research</div>
+                        </div>
+                        <div class="featured-content">
+                            <div class="article-meta">
+                                <span><i class="far fa-calendar"></i> March 15, 2024</span>
+                                <span><i class="far fa-user"></i> By Research Team</span>
+                            </div>
+                            <h3>Advancements in Solar Panel Technology</h3>
+                            <p>Exploring the latest innovations in solar panel efficiency and their potential impact on
+                                renewable energy adoption.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="side-articles">
+                        <div class="side-article">
+                            <div class="article-meta">
+                                <span><i class="far fa-calendar"></i> March 10, 2024</span>
+                            </div>
+                            <h4>Workshop on Energy Storage Solutions</h4>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="side-article">
+                            <div class="article-meta">
+                                <span><i class="far fa-calendar"></i> March 5, 2024</span>
+                            </div>
+                            <h4>Community Outreach Program Success</h4>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Articles -->
+    <section class="latest-articles">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">Recent Articles</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?auto=format&fit=crop&w=800&q=80"
+                                alt="Oil Refinery">
+                            <span class="category-badge">Education</span>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="date"><i class="far fa-calendar"></i> March 12, 2024</span>
+                                <span class="author"><i class="far fa-user"></i> By Education Team</span>
+                            </div>
+                            <h3>Understanding Renewable Energy Basics</h3>
+                            <p>A comprehensive guide to the fundamentals of renewable energy technologies.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80"
+                                alt="Solar Panels">
+                            <span class="category-badge">Innovation</span>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="date"><i class="far fa-calendar"></i> March 8, 2024</span>
+                                <span class="author"><i class="far fa-user"></i> By Innovation Team</span>
+                            </div>
+                            <h3>Smart Grid Technology Implementation</h3>
+                            <p>Exploring the future of energy distribution with smart grid systems.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=800&q=80"
+                                alt="Solar Farm">
+                            <span class="category-badge">Community</span>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="date"><i class="far fa-calendar"></i> March 3, 2024</span>
+                                <span class="author"><i class="far fa-user"></i> By Community Team</span>
+                            </div>
+                            <h3>Community Solar Project Success Story</h3>
+                            <p>How a local community came together to implement solar energy solutions.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?auto=format&fit=crop&w=800&q=80"
+                                alt="Oil Refinery">
+                            <span class="category-badge">Education</span>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="date"><i class="far fa-calendar"></i> March 12, 2024</span>
+                                <span class="author"><i class="far fa-user"></i> By Education Team</span>
+                            </div>
+                            <h3>Understanding Renewable Energy Basics</h3>
+                            <p>A comprehensive guide to the fundamentals of renewable energy technologies.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80"
+                                alt="Solar Panels">
+                            <span class="category-badge">Innovation</span>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="date"><i class="far fa-calendar"></i> March 8, 2024</span>
+                                <span class="author"><i class="far fa-user"></i> By Innovation Team</span>
+                            </div>
+                            <h3>Smart Grid Technology Implementation</h3>
+                            <p>Exploring the future of energy distribution with smart grid systems.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=800&q=80"
+                                alt="Solar Farm">
+                            <span class="category-badge">Community</span>
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="date"><i class="far fa-calendar"></i> March 3, 2024</span>
+                                <span class="author"><i class="far fa-user"></i> By Community Team</span>
+                            </div>
+                            <h3>Community Solar Project Success Story</h3>
+                            <p>How a local community came together to implement solar energy solutions.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up">
+                        <div class="footer-info">
+                            <img src="gambar/LOGO_SRE.png" alt="SRE Logo" class="footer-logo">
+                            <p class="mt-3">Society of Renewable Energy ITPLN is dedicated to advancing sustainable
+                                energy solutions through education, innovation, and community engagement.</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="100"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/sre.itpln/" class="social-link" data-aos="fade-up"
+                                    data-aos-delay="200"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="300"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="400"><i
+                                        class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#activities">Activities</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li><a href="#news">News</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                        <h4 class="footer-title">Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Research Papers</a></li>
+                            <li><a href="#">Project Gallery</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <h4 class="footer-title">Contact Info</h4>
+                        <ul class="footer-contact">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Institut Teknologi PLN<br>Jakarta, Indonesia</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>sre.itpln@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+62 XXX-XXX-XXX</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6" data-aos="fade-up">
+                        <p class="copyright">© 2024 Society of Renewable Energy ITPLN. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="license-info">
+                            <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                                    target="_blank">CC BY-NC-SA 4.0</a></p>
+                            <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg"
+                                alt="CC BY-NC-SA 4.0" class="cc-license">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* News Page Styles */
+        :root {
+            --primary-color: #1a5d1a;
+            /* Dark green */
+            --secondary-color: #2e8b57;
+            /* Medium green */
+            --accent-color: #90ee90;
+            /* Light green */
+            --gradient-start: #1a5d1a;
+            --gradient-end: #2e8b57;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+        }
+
+        .news-hero {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            padding: 150px 0 100px;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            background: linear-gradient(45deg, var(--white), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(26, 93, 26, 0.3), rgba(46, 139, 87, 0.3));
+        }
+
+        /* Featured Articles */
+        .featured-articles {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: rgba(26, 93, 26, 0.1);
+            color: var(--primary-color);
+            border-radius: 30px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .featured-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .featured-image {
+            position: relative;
+            height: 400px;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .article-category {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--accent-color);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .featured-content {
+            padding: 2rem;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 1.5rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .article-meta i {
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+        }
+
+        .read-more {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: var(--secondary-color);
+            transform: translateX(5px);
+        }
+
+        .side-articles {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .side-article {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .side-article:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Latest Articles */
+        .latest-articles {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .section-title {
+            color: #1a5d1a;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .title-underline {
+            width: 80px;
+            height: 4px;
+            background: #00bf63;
+            margin: 0 auto;
+        }
+
+        .article-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-image {
+            position: relative;
+            height: 240px;
+            overflow: hidden;
+        }
+
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .article-card:hover .article-image img {
+            transform: scale(1.05);
+        }
+
+        .category-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(144, 238, 144, 0.9);
+            color: #1a5d1a;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .article-content {
+            padding: 1.5rem;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-meta i {
+            color: #1a5d1a;
+            margin-right: 0.3rem;
+        }
+
+        .article-content h3 {
+            color: #1a5d1a;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .article-content p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            color: #1a5d1a;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: #00bf63;
+        }
+
+        .read-more i {
+            transition: transform 0.3s ease;
+        }
+
+        .read-more:hover i {
+            transform: translateX(5px);
+        }
+
+        .btn-load-more {
+            display: inline-block;
+            background: #1a5d1a;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-load-more:hover {
+            background: #00bf63;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .news-hero {
+                padding: 100px 0 60px;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .article-image {
+                height: 200px;
+            }
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
+</body>
+
+</html>
