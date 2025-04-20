@@ -12,6 +12,92 @@ html {
     width: 100%;
 }
 
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-link i {
+    font-size: 1.1rem;
+}
+
+.nav-link:hover {
+    color: #1b4332;
+}
+
+.navbar-brand {
+    margin-right: 2rem;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.btn-join {
+    background: #1b4332;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin-left: 2rem;
+}
+
+.btn-join:hover {
+    background: #2d6a4f;
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+    .navbar-content {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .btn-join {
+        margin: 1rem 0 0 0;
+    }
+}
+
+
 /* Navbar Styles */
 .navbar {
     background: rgba(255, 255, 255, 0.95);
@@ -147,7 +233,7 @@ html {
 .navbar-toggler-icon {
     background-image: none;
     position: relative;
-    width: 24px;
+    width: 90px;
     height: 24px;
 }
 
